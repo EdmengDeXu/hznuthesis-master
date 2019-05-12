@@ -47,7 +47,7 @@
   则原因可能为如下四种：
     1. 路径中存在特殊字符：请确保 LaTeX 软件的安装路径以及 LaTeX 模板的路径中
        不存在奇怪的字符，尽量避免在路径中使用中文字符和空格。
-    2. LaTeX 编译系统安装失败：请暂时抛开 ucasthesis，而是测试一个基本的中文
+    2. LaTeX 编译系统安装失败：请暂时抛开 hznuthesis，而是测试一个基本的中文
        LaTeX 文档，若编译无法通过，则请卸载并重新安装 LaTeX 编译软件的最新版。
        （MikTeX 用户：安装后须在 CMD 运行 `initexmf --mkmaps` 才能使用 pdflatex。
        并进入软件的 Package Manager (Admin) 确认 Repository--Synchronize 状态。

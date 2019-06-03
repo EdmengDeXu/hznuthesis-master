@@ -274,12 +274,14 @@
 \fi
 \ifARTRATEX@lscape% landscape layout
     \RequirePackage{fancyhdr}% fancy headers and footers
+    %\RequirePackage{lastpage}
     %- usage: \begin{landscape} [\thispagestyle{lscape}] text... \end{landscape}
     \RequirePackage{pdflscape}% landscape environment
     \RequirePackage[absolute]{textpos}% rotated page number
 \fi
 \ifARTRATEX@myhdr% header and footer style
     \RequirePackage{fancyhdr}% fancy headers and footers
+    %\RequirePackage{lastpage}
 \fi
 %\RequirePackage{microtype}% improves general appearance of the text
 %-
@@ -432,10 +434,10 @@
     }
     \fancypagestyle{mainmatterstyle}{% style for mainmatter
         \fancyhf{}% clear fields
-        \fancyhead[CE]{\footnotesize \@title}% structure elements
-        \fancyhead[CO]{\footnotesize \CTEXthechapter\ \leftmark}% structure elements
-        \fancyfoot[LE]{\footnotesize \thepage}% page number
-        \fancyfoot[RO]{\footnotesize \thepage}% page number
+        \fancyhead[RE]{\footnotesize 杭州师范大学本科毕业设计（论文）正文}% structure elements
+        \fancyhead[RO]{\footnotesize 杭州师范大学本科毕业设计（论文）正文}% structure elements
+        \fancyfoot[CE]{\footnotesize 第\thepage 页  (共\pageref{pagenum}页) }% page number
+        \fancyfoot[CO]{\footnotesize 第\thepage 页  (共\pageref{pagenum}页) }%page number
         \renewcommand{\headrulewidth}{0.8pt}% header rule
         \renewcommand{\footrulewidth}{0pt}% footer rule
     }
@@ -443,8 +445,8 @@
         \fancyhf{}% clear fields
         \fancyhead[CE]{\footnotesize \@title}% structure elements
         \fancyhead[CO]{\footnotesize \leftmark}% structure elements
-        \fancyfoot[LE]{\footnotesize \thepage}% page number
-        \fancyfoot[RO]{\footnotesize \thepage}% page number
+        \fancyfoot[CE]{\footnotesize 第\thepage 页  (共\pageref{pagenum}页) }% page number
+        \fancyfoot[CO]{\footnotesize 第\thepage 页  (共\pageref{pagenum}页) }%page number
         \renewcommand{\headrulewidth}{0.8pt}% header rule
         \renewcommand{\footrulewidth}{0pt}% footer rule
     }

@@ -8,7 +8,7 @@
 %->> Identification
 %---------------------------------------------------------------------------%
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]%
-\ProvidesClass{hznuthesis}[2018/10/01 v0.1 LaTeX document class]%
+\ProvidesClass{hznuthesis}[2014/10/01 v0.1 LaTeX document class]%
 %---------------------------------------------------------------------------%
 %->> Declare options
 %---------------------------------------------------------------------------%
@@ -282,7 +282,7 @@
   \cleardoublepage
   \thispagestyle{empty}
   \begin{center}
-    \vspace*{60pt}
+    \vspace*{20pt}
     %论文题目
       \sf\heiti\zihao{2} \textbf{\HZNU@value@title}
     \\
@@ -290,7 +290,7 @@
     \vspace*{50pt}
       \Large\textbf{\HZNU@value@englishtitle}
     \\
-    \vspace*{80pt}
+    \vspace*{60pt}
     \bf\songti\zihao{3}
     \def\tabcolsep{10pt}
     \def\arraystretch{1.5}
@@ -324,7 +324,7 @@
   \end{center}
 
   \begin{center}
-      \vspace*{40pt}
+      \vspace*{60pt}
       \bf\songti\zihao{-3}
       %完成时间
       %\textit\HZNU@label@submitdate：

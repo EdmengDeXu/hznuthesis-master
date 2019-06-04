@@ -280,7 +280,7 @@
 %-
 \newcommand\makeenglishtitle{%
   \cleardoublepage
-  \thispagestyle{empty}
+  %\thispagestyle{empty}
   \begin{center}
     \vspace*{20pt}
     %论文题目
